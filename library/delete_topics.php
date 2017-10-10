@@ -101,8 +101,7 @@
 		if(isSet($_POST['availupdate']) )
 		{
 			$q = mysqli_query($conn, "DELETE FROM topic where topic_id= ".$_POST['count'] ) ;
-			$q = mysqli_query($conn, "DELETE FROM book_of_topic where topic_id= ".$_POST['count'] ) ;
-      $flag=3;
+ 		        $flag=3;
 		}
 
 		if(isSet($_POST['searchname']) && $_POST['searchname']!= "" )
