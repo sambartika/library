@@ -104,8 +104,6 @@
 		if(isSet($_POST['availupdate']) )
 		{
 			$q = mysqli_query($conn, "DELETE FROM library.book where book_id= ".$_POST['count'] ) ;
-			$q = mysqli_query($conn, "DELETE from library.book_addition_history where book_id=".$_POST['count'] ) ;
-			$q = mysqli_query($conn, "DELETE from library.topic_of_book where book_id=".$_POST['count'] ) ;
 			$flag=3;
 		}
 		if(isSet($_POST['searchname']) && isSet($_POST['searchauthor']) && $_POST['searchname']!= "" && $_POST['searchauthor']!= "")
