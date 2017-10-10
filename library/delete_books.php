@@ -225,11 +225,11 @@
 						<div class=\"imgAbt\">";
 			$file= "images/book_no".$books[$i]['book_id'].".jpeg";
 			if (file_exists($file)) {
-				echo " <img width=\"150\" height=\"200\" src=\"http://localhost/library/images/book_no".$books[$i]['book_id'].".jpeg\" />";
+				echo " <img width=\"150\" height=\"200\" src=\"".$url."/library/images/book_no".$books[$i]['book_id'].".jpeg\" />";
 			}	 
 			else {
 				//echo "The file file does not exist".$file;
-				echo " <img width=\"150\" height=\"200\" src=\"http://localhost/library/images/noimage.png\" />";
+				echo " <img width=\"150\" height=\"200\" src=\"".$url."/library/images/noimage.png\" />";
 			}
 		
 			echo "
