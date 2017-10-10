@@ -12,5 +12,5 @@
 	{
 		die;
 	}
-	//mysql_set_charset("UTF8");
+	$url= "http://localhost";
 ?>
